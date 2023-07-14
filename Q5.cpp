@@ -1,45 +1,23 @@
 #include<iostream>
 using namespace std;
-int
-main ()
-{
-
-
-  for (int i = 1; i <= 5; i++)
-    {
-
-      for (int j = 5; j >= i; j--)
-	{
-	  cout << " ";
+int main() {
+	int a = 1;
+	while (a <= 4) {
+		if (a % 2 != 0) {
+			int b = 1;
+			while (b <= 11) {
+				cout << "- ";
+				b++;
+			} cout << endl;
+		}
+		if (a % 2 == 0) {
+			int b = 1;
+			while (b <= 11) {
+				cout << " -";
+				b++;
+			} cout << endl;
+		}
+		a++;
 	}
-      for (int k = 1; k <= i - 1; k++)
-	{
-	  cout << "* ";
-	}
-      for (int j = 5; j >= i; j--)
-	{
-	  cout << " ";
-	}
-      for (int k = 1; k <= i - 1; k++)
-	{
-	  cout << "* ";
-	}
-
-      cout << endl;
-    }
-
-
-
-  for (int i = 0; i < 10; i++)
-    {
-      for (int j = 0; j < i; j++)
-	{
-	  cout << " ";
-	}
-      for (int j = 0; j < 10 - i; j++)
-	{
-	  cout << "* ";
-	}
-      cout << endl;
-    }
 }
+	
