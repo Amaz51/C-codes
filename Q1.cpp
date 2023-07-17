@@ -1,25 +1,21 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
-    int i = 0, rows;
-    cout << "Enter the number of rows : ";
-    cin >> rows;
-    while (i < rows) {
-        int u = rows;
-        while (u > i) {
-            cout << "*";
-            u--;
-        }
-        cout << endl;
-        i++;
-    }i++;
-    while (i < (rows + rows)) {
-        int f = 0;
-        while (f <= (i - rows)) {
-            cout << "*";
-            f++;
-        }i++;
-        cout << endl;
-    }
-}
+
+	void check_palindrom(int a) {
+         int rev = 0;
+		while (a != 0) {
+			int b = a % 10;
+			
+			rev = (rev * 10) + b;
+			a = a / 10;
+		}
+		if (a == rev) {
+			cout << a << " is palindrome.";
+		}
+	}
+	int main() {
+		int num;
+		cout << "Enter the number : ";
+		cin >> num;
+		check_palindrom(num);
+	}
