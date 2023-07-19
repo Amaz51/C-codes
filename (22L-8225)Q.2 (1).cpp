@@ -4,7 +4,7 @@ using namespace std;
 int search(char paragraph[], char substring[])
 {
 	int count=0,size;
-	size = sizeof(substring);
+	size = sizeof(substring);d
 	for (int i = 0; paragraph[i] != 0; i++)
 	{
 		int sizet=0;
